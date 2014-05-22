@@ -3,7 +3,7 @@
   realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
   <class id="1" language="java" name="src.Movie" project="Refactoring" file="/Refactoring/src/src/Movie.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="136" x="255" y="176"/>    
+    <position height="225" width="136" x="256" y="176"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="src.Program" project="Refactoring" file="/Refactoring/src/src/Program.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="113" x="255" y="37"/>    
+    <position height="99" width="113" x="256" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="src.Customer" project="Refactoring" file="/Refactoring/src/src/Customer.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="174" x="41" y="176"/>    
+    <position height="171" width="174" x="42" y="176"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,25 +30,81 @@
   </class>  
   <class id="4" language="java" name="src.Rental" project="Refactoring" file="/Refactoring/src/src/Rental.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="122" x="431" y="176"/>    
+    <position height="135" width="122" x="432" y="176"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <dependency id="5">    
+  <class id="5" language="java" name="src.NewReleasePrice" project="Refactoring" file="/Refactoring/src/src/Price.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="178" x="212" y="616"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="src.ChildrensPrice" project="Refactoring" file="/Refactoring/src/src/Price.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="130" x="430" y="616"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="src.RegularPrice" project="Refactoring" file="/Refactoring/src/src/Price.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="130" x="42" y="616"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="src.Price" project="Refactoring" file="/Refactoring/src/src/Price.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="178" x="235" y="441"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <dependency id="10">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </dependency>  
-  <dependency id="6">    
+  <association id="11">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="12" name="_price"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="14">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="4"/>  
   </dependency>  
-  <dependency id="7">    
+  <generalization id="15">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <dependency id="16">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </dependency>  
+  <generalization id="17">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
