@@ -3,7 +3,7 @@
   realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
   <class id="1" language="java" name="src.Movie" project="Refactoring" file="/Refactoring/src/src/Movie.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="136" x="281" y="387"/>    
+    <position height="225" width="136" x="255" y="176"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="src.Program" project="Refactoring" file="/Refactoring/src/src/Program.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="113" x="273" y="37"/>    
+    <position height="99" width="113" x="255" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="src.Rental" project="Refactoring" file="/Refactoring/src/src/Rental.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="122" x="255" y="176"/>    
+    <position height="135" width="122" x="431" y="176"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -38,23 +38,14 @@
     </display>  
   </class>  
   <dependency id="5">    
-    <bendpoint x="407" y="176"/>    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </dependency>  
-  <association id="6">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="7" name="movie"/>      
-      <multiplicity id="8" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="9">    
+  <dependency id="6">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="4"/>  
   </dependency>  
-  <dependency id="10">    
+  <dependency id="7">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </dependency>  
